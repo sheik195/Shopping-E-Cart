@@ -1,0 +1,56 @@
+/* Style for the product image and buttons */
+.img-thumbnail {
+    max-width: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  span > button {
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Style for the product details section */
+  .d-flex.flex-column {
+    margin-left: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .rating {
+    margin-top: 20px;
+  }
+  
+  .size {
+    margin-top: 20px;
+  }
+  
+  /* Style for the size buttons */
+  .size button {
+    margin-right: 10px;
+  }
+  
+  /* Style for the product details */
+  .product-details {
+    margin-top: 20px;
+  }
+  
+  .product-details p {
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the container */
+  .container {
+    margin-bottom: 20px;
+  }
