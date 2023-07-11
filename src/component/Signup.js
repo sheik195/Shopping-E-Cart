@@ -34,7 +34,7 @@ export default function Signup() {
       }
     }
     const GettingData=()=>{
-      axios.post("http://localhost:3500/login/signup",{
+      axios.post("https://shoppingecart.onrender.com/login/signup",{
         "name":name,
         "email":email,
         "phn":phn,

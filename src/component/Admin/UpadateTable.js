@@ -82,7 +82,7 @@ export default function UpadateTable(x) {
       nw={...nw,age}
     }
       try{
-          const res=await axios.post("http://localhost:3500/admin/updproduct",{
+          const res=await axios.post("https://shoppingecart.onrender.com/admin/updproduct",{
             "id":val1,
             "upd":nw
         })

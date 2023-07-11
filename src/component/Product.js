@@ -15,7 +15,7 @@ const Product = () => {
   const [image, setImage] = useState(auth.data.images[0]);
   const[datas,setdatas]=useState([]);
   useEffect(() => {
-     axios.get("http://localhost:3500/admin/admin").then((res)=>setdatas(res.data.user)).catch((err)=>{console.log(err)})
+     axios.get("https://shoppingecart.onrender.com/admin/admin").then((res)=>setdatas(res.data.user)).catch((err)=>{console.log(err)})
   }, [])
 
   const handleImageClick = (x) => {

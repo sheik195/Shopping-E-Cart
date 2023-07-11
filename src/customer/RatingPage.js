@@ -12,7 +12,7 @@ export default function RatingPage({prod,prod1,flag}) {
     const[review,setriview]=useState("");
     const handle=async()=>{
         try{
-        const data=await axios.post(`http://localhost:3500/review/addreview?adminId=${prod._id}&userId=${prod1._id}`,{
+        const data=await axios.post(`https://shoppingecart.onrender.com/review/addreview?adminId=${prod._id}&userId=${prod1._id}`,{
             "product":prod._id,
             "user":prod1._id,
             "rating":rating,

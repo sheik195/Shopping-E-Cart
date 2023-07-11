@@ -7,7 +7,7 @@ export default function AdminControl2() {
     const[flg,setflg]=useState(1);
     const[editflg,seteditflg]=useState(-1);
     useEffect(() => {
-        axios.get("http://localhost:3500/admin/admin").then((res)=>{
+        axios.get("https://shoppingecart.onrender.com/admin/admin").then((res)=>{
               setlist(res.data.user);
               console.log(res);
         }).catch((err)=>{

@@ -15,7 +15,7 @@ export default function Home() {
  
   console.log("payload",productState);
   useEffect(() => {
-    axios.get("http://localhost:3500/admin/admin").then((res)=>{
+    axios.get("https://shoppingecart.onrender.com/admin/admin").then((res)=>{
             setproducts(res.data.user);
             setproduct2(res.data.user);
             console.log("ss",res.data.user)
@@ -26,7 +26,7 @@ export default function Home() {
   },[])
 const fetch=async()=>{
   if(product1.length!=product2.length){
-  let data=await axios.get("http://localhost:3500/admin/admin")
+  let data=await axios.get("https://shoppingecart.onrender.com/admin/admin")
    setproduct1(data.data.user)
   }
 }

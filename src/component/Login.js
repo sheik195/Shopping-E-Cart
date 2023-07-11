@@ -31,7 +31,7 @@ export default function Login() {
     }
   }
   const GettingData=()=>{
-    axios.post("http://localhost:3500/login/login",{
+    axios.post("https://shoppingecart.onrender.com/login/login",{
       "email":email,
       "pwd":pwd
     }).then((res)=>{

@@ -20,7 +20,7 @@ function Order(props) {
         else if(flg==2)
         {
             try{
-            axios.post("http://localhost:3500/order/create",{cart:auth.state.cart,email:auth.useremail})
+            axios.post("https://shoppingecart.onrender.com/order/create",{cart:auth.state.cart,email:auth.useremail})
             setdata("");
             move("/myorder");
             }

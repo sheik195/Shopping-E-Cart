@@ -24,8 +24,8 @@ export default function Product1() {
   const[rev,setrev]=useState([])
   const [flg,setflg]=useState(true);
   useEffect(() => {
-    axios.get("http://localhost:3500/admin/admin").then((res)=>setdatas(res.data.user)).catch((err)=>{console.log(err)})
-    axios.get(`http://localhost:3500/review/get?id=${data._id}`).then((res)=>{setrev([res.data.data]);console.log(res.data.data)}).catch((err)=>{console.log(err)})
+    axios.get("https://shoppingecart.onrender.com/admin/admin").then((res)=>setdatas(res.data.user)).catch((err)=>{console.log(err)})
+    axios.get(`https://shoppingecart.onrender.com/review/get?id=${data._id}`).then((res)=>{setrev([res.data.data]);console.log(res.data.data)}).catch((err)=>{console.log(err)})
        }, [])
        
 

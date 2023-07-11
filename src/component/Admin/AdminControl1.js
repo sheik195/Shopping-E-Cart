@@ -38,7 +38,7 @@ export default function AdminControl1() {
     
    console.log( "r",typeof(obj))
    setTimeout(() => {
-    axios.post("http://localhost:3500/admin/addproduct",obj).then((res)=>{console.log(res);setflg(flg+1);setload(false)}).catch((err)=>{console.log(err);setload(false)})
+    axios.post("https://shoppingecart.onrender.com/admin/addproduct",obj).then((res)=>{console.log(res);setflg(flg+1);setload(false)}).catch((err)=>{console.log(err);setload(false)})
    }, 2000);
 
   }

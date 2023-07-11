@@ -2,7 +2,7 @@ import React from 'react'
 import axios from "axios";
 export default function AdminTable(x) {
   const del=(val,s1,s2)=>{
-    axios.post("http://localhost:3500/admin/delproduct",{id:val}).then((res)=>{console.log(res);
+    axios.post("https://shoppingecart.onrender.com/admin/delproduct",{id:val}).then((res)=>{console.log(res);
   s2(s1+1)
   }).catch((err)=>{console.log(err)})
   }

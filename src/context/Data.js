@@ -7,7 +7,7 @@ export default function Data() {
   const auth=CartState();
     const[pro,setpro]=useState([]);
     useEffect(()=>{
-         axios.get("http://localhost:3500/admin/admin").then((res)=>{
+         axios.get("https://shoppingecart.onrender.com/admin/admin").then((res)=>{
             setpro(res.data.user);
            // console.log("88",res.data.user);
             auth.dispatch({"type":"change","data":res.data.user})

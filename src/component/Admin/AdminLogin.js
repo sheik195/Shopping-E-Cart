@@ -30,7 +30,7 @@ export default function AdminLogin() {
     }
   }
   const GettingData=()=>{
-    axios.post("http://localhost:3500/login/adminlogin",{
+    axios.post("https://shoppingecart.onrender.com/login/adminlogin",{
       "email":email,
       "pwd":pwd
     }).then((res)=>{

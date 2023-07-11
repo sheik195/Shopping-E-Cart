@@ -12,7 +12,7 @@ export default function Myorder() {
   const value= localStorage.getItem("emaildata");
 
   useEffect(() => {
-    axios.get(`http://localhost:3500/order/getdata?id=${auth.useremail}`)
+    axios.get(`https://shoppingecart.onrender.com/order/getdata?id=${auth.useremail}`)
     .then((res)=>{console.log(res);setdata(res.data.product);setrange(res.data.range);setuser(res.data.user)})
     .catch((err)=>console.log(err))
   }, [])
